@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View, TextInput, Image, Pressable } from 'react-native'
+import { StyleSheet, Text, View, TextInput, Image, Pressable, ScrollView } from 'react-native'
 import React from 'react'
 
 const Screen4 = (props) => {
   const { navigation } = props;
   return (
-    <View>
+    <ScrollView style={styles.container}>
+    <View style={styles.body}>
       {/* <Button title="Trở lại" onPress={() => navigation.goBack() /> */}
       <Pressable onPress={() => navigation.goBack()}>
       <Image style={styles.hinh2} source={require('../../../media_phainop/backlab41.png')} />
@@ -21,6 +22,7 @@ const Screen4 = (props) => {
         </Pressable>
       </View>
     </View>
+    </ScrollView>
   )
 }
 
@@ -30,26 +32,27 @@ const styles = StyleSheet.create({
   body: {
     width: '100%',
     height: '100%',
+    padding: 16,
   },
   hinh2: {
-    marginTop: 32,
-    marginLeft: 28,
+    // marginTop: 32,
+    // marginLeft: 28,
     width: 10,
     height: 20,
   },
   homeview3: {
     backgroundColor: 'white',
     position: 'relative',
-    marginLeft: 28,
+    // marginLeft: 28,
     marginTop: 32,
     borderRadius: 10,
     height: 60,
-    width: 400,
+    width: '100%',
     position: 'relative',
     flexDirection: 'row',
   },
   homeview4: {
-    width: 450,
+    width: '100%',
     flexDirection: 'row',
     justifyContent: 'flex-end',
     marginRight: 10,
@@ -68,7 +71,7 @@ const styles = StyleSheet.create({
     color: '#FE724C',
   },
   title2: {
-    width: 380,
+    width: '95%',
     marginTop: 32,
     marginLeft: 28,
   },

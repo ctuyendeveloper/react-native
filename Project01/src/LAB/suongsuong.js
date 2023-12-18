@@ -1,11 +1,15 @@
-import { Image, ScrollView, StyleSheet, Text, View, } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, View, Button, Pressable } from 'react-native'
 import React from 'react'
 
-const suongsuong = () => {
+const suongsuong = ({ navigation }) => {
     return (
         <View style={styles.body}>
             <View style={styles.topview}>
-                <Image style={styles.iconsearchhomeview2} source={require('../../media_phainop/back.png')} />
+                <Pressable onPress={() => navigation.navigate('full')}>
+                    <View style={styles.buttonback}>
+                        <Image style={styles.iconsearchhomeview2} source={require('../../media_phainop/back.png')} />
+                    </View>
+                </Pressable>
                 <Text>Burgers</Text>
                 <Text>Filter</Text>
             </View>
@@ -14,141 +18,145 @@ const suongsuong = () => {
                 <Text>Search Again</Text>
             </View>
             <ScrollView style={styles.scroll}>
-            <View style={styles.homeview}>
-                <View style={styles.homeview1}>
-                    <View style={styles.homeview1b}>
-                        <Image style={styles.homeview1icon} source={require('../../media_phainop/logotest.png')} />
-                        <View style={styles.homeview1c}>
-                            <Image  source={require('../../media_phainop/fast.png')} />
-                            <Text style={styles.homeview1ctitle}>25min</Text>
+                <View style={styles.homeview}>
+                    <View style={styles.homeview1}>
+                        <View style={styles.homeview1b}>
+                            <Image style={styles.homeview1icon} source={require('../../media_phainop/logotest.png')} />
+                            <View style={styles.homeview1c}>
+                                <Image source={require('../../media_phainop/fast.png')} />
+                                <Text style={styles.homeview1ctitle}>25min</Text>
+                            </View>
+                            <View style={styles.homeview1d}>
+                                <Image source={require('../../media_phainop/delivery.png')} />
+                                <Text style={styles.homeview1ctitle}>Chinese</Text>
+                            </View>
+                            <View style={styles.homeview1f}>
+                                <Text style={styles.homeview1ctitle}>4.5</Text>
+                            </View>
                         </View>
-                        <View style={styles.homeview1d}>
-                            <Image source={require('../../media_phainop/delivery.png')} />
-                            <Text style={styles.homeview1ctitle}>Chinese</Text>
-                        </View>
-                        <View style={styles.homeview1f}>
-                            <Text style={styles.homeview1ctitle}>4.5</Text>
+                        <Text style={styles.homeview1title}>McDonald's</Text>
+                        <View style={styles.homeview1a}>
+                            <Text style={styles.homeview1atitle}>Chinese</Text>
+                            <Image source={require('../../media_phainop/daucham.png')} />
+                            <Text style={styles.homeview1atitle}>American</Text>
                         </View>
                     </View>
-                    <Text style={styles.homeview1title}>McDonald's</Text>
-                    <View style={styles.homeview1a}>
-                        <Text style={styles.homeview1atitle}>Chinese</Text>
-                        <Image source={require('../../media_phainop/daucham.png')} />
-                        <Text style={styles.homeview1atitle}>American</Text>
+                    <View style={styles.homeview2}>
+                        <View style={styles.homeview1b}>
+                            <Image style={styles.homeview2icon} source={require('../../media_phainop/logotest.png')} />
+                            <View style={styles.homeview1c}>
+                                <Image source={require('../../media_phainop/fast.png')} />
+                                <Text style={styles.homeview1ctitle}>25min</Text>
+                            </View>
+                            <View style={styles.homeview1d}>
+                                <Image source={require('../../media_phainop/delivery.png')} />
+                                <Text style={styles.homeview1ctitle}>Chinese</Text>
+                            </View>
+                            <View style={styles.homeview1f}>
+                                <Text style={styles.homeview1ctitle}>4.5</Text>
+                            </View>
+                        </View>
+                        <Text style={styles.homeview1title}>McDonald's</Text>
+                        <View style={styles.homeview1a}>
+                            <Text style={styles.homeview1atitle}>Chinese</Text>
+                            <Image source={require('../../media_phainop/daucham.png')} />
+                            <Text style={styles.homeview1atitle}>American</Text>
+                        </View>
+                    </View>
+                    <View style={styles.homeview3}>
+                        <View style={styles.homeview1b}>
+                            <Image style={styles.homeview1icon} source={require('../../media_phainop/logotest.png')} />
+                            <View style={styles.homeview1c}>
+                                <Image source={require('../../media_phainop/fast.png')} />
+                                <Text style={styles.homeview1ctitle}>25min</Text>
+                            </View>
+                            <View style={styles.homeview1d}>
+                                <Image source={require('../../media_phainop/delivery.png')} />
+                                <Text style={styles.homeview1ctitle}>Chinese</Text>
+                            </View>
+                            <View style={styles.homeview1f}>
+                                <Text style={styles.homeview1ctitle}>4.5</Text>
+                            </View>
+                        </View>
+                        <Text style={styles.homeview1title}>McDonald's</Text>
+                        <View style={styles.homeview1a}>
+                            <Text style={styles.homeview1atitle}>Chinese</Text>
+                            <Image source={require('../../media_phainop/daucham.png')} />
+                            <Text style={styles.homeview1atitle}>American</Text>
+                        </View>
+                    </View>
+                    <View style={styles.homeview4}>
+                        <View style={styles.homeview1b}>
+                            <Image style={styles.homeview2icon} source={require('../../media_phainop/logotest.png')} />
+                            <View style={styles.homeview1c}>
+                                <Image source={require('../../media_phainop/fast.png')} />
+                                <Text style={styles.homeview1ctitle}>25min</Text>
+                            </View>
+                            <View style={styles.homeview1d}>
+                                <Image source={require('../../media_phainop/delivery.png')} />
+                                <Text style={styles.homeview1ctitle}>Chinese</Text>
+                            </View>
+                            <View style={styles.homeview1f}>
+                                <Text style={styles.homeview1ctitle}>4.5</Text>
+                            </View>
+                        </View>
+                        <Text style={styles.homeview1title}>McDonald's</Text>
+                        <View style={styles.homeview1a}>
+                            <Text style={styles.homeview1atitle}>Chinese</Text>
+                            <Image source={require('../../media_phainop/daucham.png')} />
+                            <Text style={styles.homeview1atitle}>American</Text>
+                        </View>
+                    </View>
+                    <View style={styles.homeview5}>
+                        <View style={styles.homeview1b}>
+                            <Image style={styles.homeview1icon} source={require('../../media_phainop/logotest.png')} />
+                            <View style={styles.homeview1c}>
+                                <Image source={require('../../media_phainop/fast.png')} />
+                                <Text style={styles.homeview1ctitle}>25min</Text>
+                            </View>
+                            <View style={styles.homeview1d}>
+                                <Image source={require('../../media_phainop/delivery.png')} />
+                                <Text style={styles.homeview1ctitle}>Chinese</Text>
+                            </View>
+                            <View style={styles.homeview1f}>
+                                <Text style={styles.homeview1ctitle}>4.5</Text>
+                            </View>
+                        </View>
+                        <Text style={styles.homeview1title}>McDonald's</Text>
+                        <View style={styles.homeview1a}>
+                            <Text style={styles.homeview1atitle}>Chinese</Text>
+                            <Image source={require('../../media_phainop/daucham.png')} />
+                            <Text style={styles.homeview1atitle}>American</Text>
+                        </View>
+                    </View>
+                    <View style={styles.homeview6}>
+                        <View style={styles.homeview1b}>
+                            <Image style={styles.homeview2icon} source={require('../../media_phainop/logotest.png')} />
+                            <View style={styles.homeview1c}>
+                                <Image source={require('../../media_phainop/fast.png')} />
+                                <Text style={styles.homeview1ctitle}>25min</Text>
+                            </View>
+                            <View style={styles.homeview1d}>
+                                <Image source={require('../../media_phainop/delivery.png')} />
+                                <Text style={styles.homeview1ctitle}>Chinese</Text>
+                            </View>
+                            <View style={styles.homeview1f}>
+                                <Text style={styles.homeview1ctitle}>4.5</Text>
+                            </View>
+                        </View>
+                        <Text style={styles.homeview1title}>McDonald's</Text>
+                        <View style={styles.homeview1a}>
+                            <Text style={styles.homeview1atitle}>Chinese</Text>
+                            <Image source={require('../../media_phainop/daucham.png')} />
+                            <Text style={styles.homeview1atitle}>American</Text>
+                        </View>
                     </View>
                 </View>
-                <View style={styles.homeview2}>
-                    <View style={styles.homeview1b}>
-                        <Image style={styles.homeview2icon} source={require('../../media_phainop/logotest.png')} />
-                        <View style={styles.homeview1c}>
-                            <Image  source={require('../../media_phainop/fast.png')} />
-                            <Text style={styles.homeview1ctitle}>25min</Text>
-                        </View>
-                        <View style={styles.homeview1d}>
-                            <Image source={require('../../media_phainop/delivery.png')} />
-                            <Text style={styles.homeview1ctitle}>Chinese</Text>
-                        </View>
-                        <View style={styles.homeview1f}>
-                            <Text style={styles.homeview1ctitle}>4.5</Text>
-                        </View>
-                    </View>
-                    <Text style={styles.homeview1title}>McDonald's</Text>
-                    <View style={styles.homeview1a}>
-                        <Text style={styles.homeview1atitle}>Chinese</Text>
-                        <Image source={require('../../media_phainop/daucham.png')} />
-                        <Text style={styles.homeview1atitle}>American</Text>
-                    </View>
-                </View>
-                <View style={styles.homeview3}>
-                    <View style={styles.homeview1b}>
-                        <Image style={styles.homeview1icon} source={require('../../media_phainop/logotest.png')} />
-                        <View style={styles.homeview1c}>
-                            <Image  source={require('../../media_phainop/fast.png')} />
-                            <Text style={styles.homeview1ctitle}>25min</Text>
-                        </View>
-                        <View style={styles.homeview1d}>
-                            <Image source={require('../../media_phainop/delivery.png')} />
-                            <Text style={styles.homeview1ctitle}>Chinese</Text>
-                        </View>
-                        <View style={styles.homeview1f}>
-                            <Text style={styles.homeview1ctitle}>4.5</Text>
-                        </View>
-                    </View>
-                    <Text style={styles.homeview1title}>McDonald's</Text>
-                    <View style={styles.homeview1a}>
-                        <Text style={styles.homeview1atitle}>Chinese</Text>
-                        <Image source={require('../../media_phainop/daucham.png')} />
-                        <Text style={styles.homeview1atitle}>American</Text>
-                    </View>
-                </View>
-                <View style={styles.homeview4}>
-                    <View style={styles.homeview1b}>
-                        <Image style={styles.homeview2icon} source={require('../../media_phainop/logotest.png')} />
-                        <View style={styles.homeview1c}>
-                            <Image  source={require('../../media_phainop/fast.png')} />
-                            <Text style={styles.homeview1ctitle}>25min</Text>
-                        </View>
-                        <View style={styles.homeview1d}>
-                            <Image source={require('../../media_phainop/delivery.png')} />
-                            <Text style={styles.homeview1ctitle}>Chinese</Text>
-                        </View>
-                        <View style={styles.homeview1f}>
-                            <Text style={styles.homeview1ctitle}>4.5</Text>
-                        </View>
-                    </View>
-                    <Text style={styles.homeview1title}>McDonald's</Text>
-                    <View style={styles.homeview1a}>
-                        <Text style={styles.homeview1atitle}>Chinese</Text>
-                        <Image source={require('../../media_phainop/daucham.png')} />
-                        <Text style={styles.homeview1atitle}>American</Text>
-                    </View>
-                </View>
-                <View style={styles.homeview5}>
-                    <View style={styles.homeview1b}>
-                        <Image style={styles.homeview1icon} source={require('../../media_phainop/logotest.png')} />
-                        <View style={styles.homeview1c}>
-                            <Image  source={require('../../media_phainop/fast.png')} />
-                            <Text style={styles.homeview1ctitle}>25min</Text>
-                        </View>
-                        <View style={styles.homeview1d}>
-                            <Image source={require('../../media_phainop/delivery.png')} />
-                            <Text style={styles.homeview1ctitle}>Chinese</Text>
-                        </View>
-                        <View style={styles.homeview1f}>
-                            <Text style={styles.homeview1ctitle}>4.5</Text>
-                        </View>
-                    </View>
-                    <Text style={styles.homeview1title}>McDonald's</Text>
-                    <View style={styles.homeview1a}>
-                        <Text style={styles.homeview1atitle}>Chinese</Text>
-                        <Image source={require('../../media_phainop/daucham.png')} />
-                        <Text style={styles.homeview1atitle}>American</Text>
-                    </View>
-                </View>
-                <View style={styles.homeview6}>
-                    <View style={styles.homeview1b}>
-                        <Image style={styles.homeview2icon} source={require('../../media_phainop/logotest.png')} />
-                        <View style={styles.homeview1c}>
-                            <Image  source={require('../../media_phainop/fast.png')} />
-                            <Text style={styles.homeview1ctitle}>25min</Text>
-                        </View>
-                        <View style={styles.homeview1d}>
-                            <Image source={require('../../media_phainop/delivery.png')} />
-                            <Text style={styles.homeview1ctitle}>Chinese</Text>
-                        </View>
-                        <View style={styles.homeview1f}>
-                            <Text style={styles.homeview1ctitle}>4.5</Text>
-                        </View>
-                    </View>
-                    <Text style={styles.homeview1title}>McDonald's</Text>
-                    <View style={styles.homeview1a}>
-                        <Text style={styles.homeview1atitle}>Chinese</Text>
-                        <Image source={require('../../media_phainop/daucham.png')} />
-                        <Text style={styles.homeview1atitle}>American</Text>
-                    </View>
-                </View>
-            </View>
             </ScrollView>
+            {/* <Button title='back' style={styles.bottomitem} onPress={() => navigation.navigate('full')}> */}
+            {/* <Image style={styles.iconbottom} source={require('../media_phainop/back.png')} /> */}
+            {/* <Text style={styles.bottomtitle}>Profile</Text> */}
+            {/* </Button> */}
         </View>
     )
 }
@@ -180,7 +188,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     homeview1: {
-      
+
         width: '43%',
         height: '29%',
     },
@@ -278,6 +286,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 6,
     },
-    homeview1ftitle: {
+    buttonback: {
+        width: 24,
+        height: 24,
+        // backgroundColor: 'red',
     }
 })

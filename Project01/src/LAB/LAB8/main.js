@@ -10,13 +10,14 @@ const Stack = createNativeStackNavigator();
 
 
 const main = () => {
+    // const { navigation } = props;
     return (
-        <NavigationContainer>
+        // <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen name='Login' component={Screen1} />
                 <Stack.Screen name='Forgot' component={Screen2} />
             </Stack.Navigator>
-        </NavigationContainer>
+        // </NavigationContainer>
     )
 }
 

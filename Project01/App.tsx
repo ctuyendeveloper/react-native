@@ -27,13 +27,23 @@ import LAB5 from './src/LAB/LAB5/Screen1';
 import LAB8 from './src/LAB/LAB8/Screen1';
 import LAB8a from './src/LAB/LAB8/main';
 import LAB6a from './src/LAB/LAB6/Screen1';
+import LAB6b from './src/LAB/LAB6/Screen2';
+import LAB6c from './src/LAB/LAB6/Screen4';
 import { UserProvider } from './src/ASM/components/User/UserContext';
 import { NewsProvider } from './src/ASM/components/News/NewsContext';
 import AppNavigation from './src/ASM/components/navigations/AppNavigation';
 import Suongsuong from './src/LAB/suongsuong';
+import Full from './src/LAB/fullscreen';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator  } from '@react-navigation/native-stack'
+
+
 
 
 function App(): JSX.Element {
+  const Stack = createNativeStackNavigator();
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -48,22 +58,42 @@ function App(): JSX.Element {
       {/* <Register></Register> */}
 
 
-      {/* <UserProvider>
+      <UserProvider>
         <NewsProvider>
         <AppNavigation/>
         </NewsProvider>
-      </UserProvider> */}
+      </UserProvider>
 
-
-      {/* <Detail></Detail> */}
-            {/* <test/> */}
+      {/* 
+      <Detail></Detail> */}
+      {/* <test/> */}
       {/* <LAB8a /> */}
       {/* <LAB6a /> */}
+
+
       {/* <LAB5 /> */}
       {/* <LAB4a /> */}
-      {/* <LAB3c /> */}
+      {/* <Home /> */}
       {/* <LAB3b /> */}
       {/* <Suongsuong/> */}
+
+      {/* <Suongsuong/> */}
+      {/* <Home /> */}
+      {/* <LAB5 /> */}
+      {/* <LAB6a /> */}
+      {/* <LAB8a /> */}
+
+      
+      {/* <NavigationContainer>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name='full' component={Full} />
+                <Stack.Screen name='so1' component={LAB8a} />
+                <Stack.Screen name='so2' component={LAB6a} />
+                <Stack.Screen name='so3' component={LAB5} />
+                <Stack.Screen name='so4' component={Home} />
+                <Stack.Screen name='so5' component={Suongsuong} />
+            </Stack.Navigator>
+        </NavigationContainer> */}
 
     </SafeAreaView>
 

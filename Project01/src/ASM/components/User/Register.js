@@ -91,14 +91,14 @@ const styles = StyleSheet.create({
     padding: 24,
   },
   view1: {
-    width: 379,
-    height: 155,
+    width: '100%',
+    height: '18%',
   },
   view2: {
     marginTop: 16,
   },
   view3: {
-    width: 379,
+    width: '100%',
     marginTop: 8,
     marginBottom: 16,
     justifyContent: 'space-between',
@@ -109,12 +109,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row', // x-axis
   },
   view4: {
-    width: 379,
+    width: '100%',
     justifyContent: 'space-between',
     flexDirection: 'row', // x-axis
   },
   view5: {
-    width: 379,
+    width: '100%',
     justifyContent: 'center',
     flexDirection: 'row', // x
   },
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     color: '#1877F2'
   },
   welcome: {
-    width: 215,
+    width: '57%',
     fontStyle: 'normal',
     fontWeight: 400,
     fontSize: 20,
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     padding: 10,
     gap: 10,
-    width: 379,
+    width: '100%',
     height: 48,
     // backgroundColor: '#4E4B66',
     borderWidth: 1,
@@ -184,7 +184,6 @@ const styles = StyleSheet.create({
   remember: {
     fontWeight: 400,
     fontStyle: 'normal',
-    width: 107,
     height: 21,
     fontSize: 14,
     lineHeight: 21,
@@ -201,7 +200,7 @@ const styles = StyleSheet.create({
     color: '#5890FF',
   },
   button: {
-    width: 379,
+    width: '100%',
     height: 50,
     backgroundColor: '#1877F2',
     fontStyle: 'normal',
@@ -225,14 +224,14 @@ const styles = StyleSheet.create({
     letterSpacing: 0.12,
     color: '#4E4B66',
     height: 21,
-    width: 379,
+    width: '100%',
     textAlign: 'center',
     marginTop: 16,
     marginBottom: 16,
   },
   button2: {
     flexDirection: 'row',
-    width: 174,
+    width: '46%',
     height: 50,
     backgroundColor: '#EEF1F4',
     fontStyle: 'normal',

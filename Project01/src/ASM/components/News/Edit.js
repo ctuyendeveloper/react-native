@@ -101,17 +101,12 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   contaiprofile: {
-    width: 140,
-    height: 140,
-
-    justifyContent: 'flex-end',
-    marginLeft: 100,
+    alignItems: 'center',
     marginTop: 15,
   },
   imgprofile: {
-    marginLeft: 50,
-    width: '100%',
-    height: '100%',
+    width: 140,
+    height: 140,
     borderRadius: 100,
   },
   presprofile: {

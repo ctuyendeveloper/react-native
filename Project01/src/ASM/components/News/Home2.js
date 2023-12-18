@@ -237,10 +237,12 @@ const styles = StyleSheet.create({
     },
     homeview3b: {
         marginTop: 30,
-        marginLeft: 32,
+        marginLeft: 20,
         marginBottom: 16,
     },
     homeview3hinh: {
+           
+        width: '100%',
         borderRadius: 6,
     },
     homeview3btitle1: {

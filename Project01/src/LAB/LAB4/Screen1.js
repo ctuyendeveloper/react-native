@@ -106,9 +106,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   homeview3a: {
-    backgroundColor: 'white',
+    // backgroundColor: 'red',
     height: 83,
-    width: 448,
+    width: '100%',
     flexDirection: 'row',
   },
   homeview3a1: {

@@ -1,86 +1,88 @@
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, ScrollView } from 'react-native'
 import React from 'react'
 
 const Screen3 = () => {
     return (
-        <View style={styles.body}>
-            <Text style={styles.tittle1}>Explore</Text>
-            <Text style={styles.tittle2}>Search For A Pet</Text>
-            <View style={styles.homeview2}>
-                <Image style={styles.icon} source={require('../../../media_phainop/searchlab3.png')} />
-                <TextInput style={styles.tittle3} placeholder='Search'></TextInput>
-            </View>
-            <View style={styles.bottomfake}>
-                <View style={styles.bottomitem}>
-                    <Text style={styles.bottomtitle}>Cats</Text>
-                </View>
-                <View style={[styles.bottomitem, styles.bottomtitle1]}>
-                    <Text style={styles.bottomtitle}>Dogs</Text>
-                </View>
-                <View style={styles.bottomitem}>
-                    <Text style={styles.bottomtitle}>Birds</Text>
-                </View>
-                <View style={styles.bottomitem}>
-                    <Text style={styles.bottomtitle}>Others</Text>
-                </View>
-            </View>
-            <View style={styles.homeview3}>
-                <View style={styles.homeview3a}>
-                    <Image style={styles.hinh} source={require('../../../media_phainop/dog1lab3.png')} />
-                    <View style={styles.homeview3b}>
-                        <Text style={styles.homeview3btitle1}>Coco</Text>
-                        <Text style={styles.homeview3btitle2}>Coat</Text>
-                        <Text style={styles.homeview3btitle3}>Medium</Text>
-                        <Text style={styles.homeview3btitle4}>Age</Text>
-                        <Text style={styles.homeview3btitle5}>3yrs</Text>
+            <View style={styles.body}>
+                <View style={styles.body2}>
+                    <Text style={styles.tittle1}>Explore</Text>
+                    <Text style={styles.tittle2}>Search For A Pet</Text>
+                    <View style={styles.homeview2}>
+                        <Image style={styles.icon} source={require('../../../media_phainop/searchlab3.png')} />
+                        <TextInput style={styles.tittle3} placeholder='Search'></TextInput>
                     </View>
-                    <View style={[styles.homeview3b, styles.homeview3b2]}>
-                        <Text style={styles.homeview3btitle6}>Female</Text>
-                        <Text style={styles.homeview3btitle2}>Origin</Text>
-                        <Text style={styles.homeview3btitle3}>Canada</Text>
-                        <Text style={styles.homeview3btitle4}>Weight</Text>
-                        <Text style={styles.homeview3btitle5}>4 Pounds</Text>
+                    <View style={styles.bottomfake}>
+                        <View style={styles.bottomitem}>
+                            <Text style={styles.bottomtitle}>Cats</Text>
+                        </View>
+                        <View style={[styles.bottomitem, styles.bottomtitle1]}>
+                            <Text style={styles.bottomtitle}>Dogs</Text>
+                        </View>
+                        <View style={styles.bottomitem}>
+                            <Text style={styles.bottomtitle}>Birds</Text>
+                        </View>
+                        <View style={styles.bottomitem}>
+                            <Text style={styles.bottomtitle}>Others</Text>
+                        </View>
+                    </View>
+                    <View style={styles.homeview3}>
+                        <View style={styles.homeview3a}>
+                            <Image style={styles.hinh} source={require('../../../media_phainop/dog1lab3.png')} />
+                            <View style={styles.homeview3b}>
+                                <Text style={styles.homeview3btitle1}>Coco</Text>
+                                <Text style={styles.homeview3btitle2}>Coat</Text>
+                                <Text style={styles.homeview3btitle3}>Medium</Text>
+                                <Text style={styles.homeview3btitle4}>Age</Text>
+                                <Text style={styles.homeview3btitle5}>3yrs</Text>
+                            </View>
+                            <View style={[styles.homeview3b, styles.homeview3b2]}>
+                                <Text style={styles.homeview3btitle6}>Female</Text>
+                                <Text style={styles.homeview3btitle2}>Origin</Text>
+                                <Text style={styles.homeview3btitle3}>Canada</Text>
+                                <Text style={styles.homeview3btitle4}>Weight</Text>
+                                <Text style={styles.homeview3btitle5}>4 Pounds</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.homeview3}>
+                        <View style={styles.homeview3a}>
+                            <Image style={styles.hinh} source={require('../../../media_phainop/dog2lab3.png')} />
+                            <View style={styles.homeview3b}>
+                                <Text style={styles.homeview3btitle1}>Snow</Text>
+                                <Text style={styles.homeview3btitle2}>Coat</Text>
+                                <Text style={styles.homeview3btitle3}>Short</Text>
+                                <Text style={styles.homeview3btitle4}>Age</Text>
+                                <Text style={styles.homeview3btitle5}>6yrs</Text>
+                            </View>
+                            <View style={[styles.homeview3b, styles.homeview3b2]}>
+                                <Text style={styles.homeview3btitle6}>Male</Text>
+                                <Text style={styles.homeview3btitle2}>Origin</Text>
+                                <Text style={styles.homeview3btitle3}>Greece</Text>
+                                <Text style={styles.homeview3btitle4}>Weight</Text>
+                                <Text style={styles.homeview3btitle5}>7 Pounds</Text>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+                <View style={styles.bottom}>
+                    <View style={styles.bottomitema}>
+                        <Image style={styles.iconbottom} source={require('../../../media_phainop/homelab3.png')} />
+                        <Text style={styles.bottomtitlea}>Home</Text>
+                    </View>
+                    <View style={styles.bottomitema}>
+                        <Image style={styles.iconbottom} source={require('../../../media_phainop/chatlab3.png')} />
+                        <Text style={styles.bottomtitlea}>Chat</Text>
+                    </View>
+                    <View style={styles.bottomitema}>
+                        <Image style={styles.iconbottom} source={require('../../../media_phainop/chuonglab3.png')} />
+                        <Text style={styles.bottomtitlea}>Notification</Text>
+                    </View>
+                    <View style={styles.bottomitema}>
+                        <Image style={styles.iconbottom} source={require('../../../media_phainop/profilelab3.png')} />
+                        <Text style={styles.bottomtitlea}>Profile</Text>
                     </View>
                 </View>
             </View>
-            <View style={styles.homeview3}>
-                <View style={styles.homeview3a}>
-                    <Image style={styles.hinh} source={require('../../../media_phainop/dog2lab3.png')} />
-                    <View style={styles.homeview3b}>
-                        <Text style={styles.homeview3btitle1}>Snow</Text>
-                        <Text style={styles.homeview3btitle2}>Coat</Text>
-                        <Text style={styles.homeview3btitle3}>Short</Text>
-                        <Text style={styles.homeview3btitle4}>Age</Text>
-                        <Text style={styles.homeview3btitle5}>6yrs</Text>
-                    </View>
-                    <View style={[styles.homeview3b, styles.homeview3b2]}>
-                        <Text style={styles.homeview3btitle6}>Male</Text>
-                        <Text style={styles.homeview3btitle2}>Origin</Text>
-                        <Text style={styles.homeview3btitle3}>Greece</Text>
-                        <Text style={styles.homeview3btitle4}>Weight</Text>
-                        <Text style={styles.homeview3btitle5}>7 Pounds</Text>
-                    </View>
-                </View>
-            </View>
-            <View style={styles.bottom}>
-                <View style={styles.bottomitema}>
-                    <Image style={styles.iconbottom} source={require('../../../media_phainop/homelab3.png')} />
-                    <Text style={styles.bottomtitlea}>Home</Text>
-                </View>
-                <View style={styles.bottomitema}>
-                    <Image style={styles.iconbottom} source={require('../../../media_phainop/chatlab3.png')} />
-                    <Text style={styles.bottomtitlea}>Chat</Text>
-                </View>
-                <View style={styles.bottomitema}>
-                    <Image style={styles.iconbottom} source={require('../../../media_phainop/chuonglab3.png')} />
-                    <Text style={styles.bottomtitlea}>Notification</Text>
-                </View>
-                <View style={styles.bottomitema}>
-                    <Image style={styles.iconbottom} source={require('../../../media_phainop/profilelab3.png')} />
-                    <Text style={styles.bottomtitlea}>Profile</Text>
-                </View>
-            </View>
-        </View>
     )
 }
 
@@ -92,8 +94,11 @@ const styles = StyleSheet.create({
         height: '100%',
         backgroundColor: 'rgba(223, 0, 84, 1)',
     },
+    body2: {
+        padding: 16,
+    },
     bottom: {
-        marginTop: 35,
+        marginTop: 15,
         backgroundColor: 'rgba(255, 255, 255, 0.71)',
         width: '100%',
         height: 72,
@@ -101,8 +106,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
     },
     tittle1: {
-        marginLeft: 20,
-        marginTop: 76,
+        // marginLeft: 20,
+        // marginTop: '5%',
         fontWeight: 800,
         fontStyle: 'normal',
         fontSize: 25,
@@ -110,8 +115,8 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
     },
     tittle2: {
-        marginLeft: 20,
-        marginTop: 17,
+        // marginLeft: 20,
+        // marginTop: 17,
         fontWeight: 500,
         fontStyle: 'normal',
         fontSize: 22,
@@ -120,24 +125,24 @@ const styles = StyleSheet.create({
     },
     homeview2: {
         backgroundColor: 'white',
-        marginLeft: 33,
+        // marginLeft: 33,
         marginTop: 19,
         borderRadius: 25,
         height: 52,
-        width: 400,
+        width: '100%',
         position: 'relative',
         flexDirection: 'row',
     },
     homeview3: {
-        marginTop: 38,
-        marginLeft: 25,
+        marginTop: 16,
+        // marginLeft: 25,
         flexDirection: 'row',
     },
     homeview3a: {
         backgroundColor: 'rgba(255, 210, 187, 0.66)',
         borderRadius: 25,
-        height: 171,
-        width: 400,
+        // height: 171,
+        width: '100%',
         flexDirection: 'row',
     },
     homeview3b: {
@@ -193,7 +198,7 @@ const styles = StyleSheet.create({
     },
     hinh: {
         marginLeft: 22,
-        marginTop: 6,
+        // marginTop: 6,
         borderRadius: 25,
     },
     homeview3btitle1: {

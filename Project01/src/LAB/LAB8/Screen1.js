@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TextInput, ScrollView, Pressable } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, ScrollView, Pressable, Button } from 'react-native'
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import React from 'react'
@@ -9,14 +9,15 @@ const Screen1 = (props) => {
     const { navigation } = props;
     return (
         <View style={styles.body}>
+            {/* <Button title='BACK' onPress={() => navigation.navigate('full')}/> */}
             <View style={styles.homeview}>
                 <View style={styles.homeview1}>
+                    <Pressable onPress={() => navigation.navigate('full')} style={styles.homeview2a}>
+                        <Image style={styles.iconsearchhomeview2a} source={require('../../../media_phainop/back.png')} />
+                    </Pressable>
                     <View style={styles.homeview2}>
                         <Image style={styles.iconsearchhomeview2} source={require('../../../media_phainop/search.png')} />
                         <TextInput style={styles.textinputhomeview2} placeholder='Fried Rice'></TextInput>
-                    </View>
-                    <View style={styles.homeview2a}>
-                        <Image style={styles.iconsearchhomeview2a} source={require('../../../media_phainop/iconlab8.png')} />
                     </View>
                 </View>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.scrollview}>
@@ -146,7 +147,7 @@ const styles = StyleSheet.create({
     },
     iconsearchhomeview2a: {
         marginTop: 16,
-        marginLeft: 16,
+        marginLeft: 10,
     },
     scrollview: {
         marginTop: 23,

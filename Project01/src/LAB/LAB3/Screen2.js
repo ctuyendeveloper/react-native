@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, Image, TextInput, Pressable } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, Pressable, ScrollView } from 'react-native'
 import React from 'react'
 
 const Screen2 = () => {
     return (
+        <ScrollView>
         <View style={styles.body}>
             <Image style={styles.hinh} source={require('../../../media_phainop/hinh2lab3.png')} />
             <View style={styles.view1}>
@@ -27,6 +28,7 @@ const Screen2 = () => {
                 </View>
             </View>
         </View>
+        </ScrollView>
     )
 }
 
@@ -41,6 +43,7 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     view1: {
+        padding: 16,
         height: '100%',
         backgroundColor: 'rgba(255, 139, 106, 0.7616)',
     },
@@ -65,11 +68,11 @@ const styles = StyleSheet.create({
     homeview2: {
         backgroundColor: 'white',
         position: 'relative',
-        marginLeft: 28,
+        // marginLeft: 28,
         marginTop: 27,
         borderRadius: 8,
         height: 52,
-        width: 400,
+        width: '100%',
         position: 'relative',
         flexDirection: 'row',
     },

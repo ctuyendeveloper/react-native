@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View, Image, Pressable, FlatList } from 'react-native'
+import { StyleSheet, Text, View, Image, Pressable, FlatList, Button } from 'react-native'
 import React, { useState } from 'react'
 
 
 
 
-const Screen1 = () => {
+const Screen1 = ({ navigation }) => {
   const [giatri, getgiatri] = useState(1);
   const [giatri2, getgiatri2] = useState(1);
   const total = 23.99 * giatri2 + 20.99 * giatri;
@@ -79,10 +79,12 @@ const Screen1 = () => {
   return (
     <View style={styles.body}>
       <View style={styles.top}>
-        <View style={styles.top1}>
-          <Image style={styles.hinh} source={require('../../../media_phainop/backlab4.png')} />
-          <Image style={styles.hinh2} source={require('../../../media_phainop/backlab41.png')} />
-        </View>
+        <Pressable onPress={() => navigation.navigate('full')}>
+          <View style={styles.top1}>
+            <Image style={styles.hinh} source={require('../../../media_phainop/backlab4.png')} />
+            <Image style={styles.hinh2} source={require('../../../media_phainop/backlab41.png')} />
+          </View>
+        </Pressable>
         <View style={styles.top2}>
           <Text style={styles.tittle1}>Delivery to</Text>
           <Image style={styles.hinh4} source={require('../../../media_phainop/showlab5.png')} />

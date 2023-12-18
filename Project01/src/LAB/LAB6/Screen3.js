@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View, Image, TextInput, Pressable } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, Pressable, ScrollView } from 'react-native'
 import React from 'react'
 
 const Screen3 = () => {
   return (
+    <ScrollView style={styles.container}>
     <View style={styles.body}>
       <View style={styles.view1}>
         <Text style={styles.view1title}>Register</Text>
@@ -33,9 +34,10 @@ const Screen3 = () => {
       <Pressable style={styles.button1}>
         <Text style={styles.buttonlogin1}>Sign-up</Text>
       </Pressable>
-      <Text style={styles.view4title}>Already a Member? <Text style={{ fontWeight: 'bold'}}>Login</Text></Text>
+      {/* <Text style={styles.view4title}>Already a Member? <Text style={{ fontWeight: 'bold'}}>Login</Text></Text> */}
       </View>
     </View>
+      </ScrollView>
   )
 }
 
@@ -45,12 +47,15 @@ const styles = StyleSheet.create({
   body: {
     width: '100%',
     height: '100%',
-    padding: 16,
   },
   view1: {
-    marginLeft: 28,
-    marginTop: 42,
-    width: 400,
+    padding: 16,
+    // marginLeft: 16,
+    // marginTop: 20,
+    // marginLeft: 28,
+    // marginTop: 42,
+    width: '100%',
+    // backgroundColor: 'red',
     justifyContent: 'space-between',
     flexDirection: 'row',
   },
@@ -94,34 +99,39 @@ const styles = StyleSheet.create({
   homeview3: {
     backgroundColor: 'white',
     position: 'relative',
-    marginLeft: 28,
-    marginTop: 18,
+    marginLeft: 16,
+    marginTop: 10,
+    // marginLeft: 28,
+    // marginTop: 18,
     borderRadius: 10,
     height: 60,
-    width: 400,
+    width: '90%',
     position: 'relative',
     flexDirection: 'row',
   },
   view3: {
-    marginTop: 24,
+    // marginTop: 24,
   },
   view3tittle3: {
     color: 'gray',
     marginLeft: 16,
   },
   view4: {
-    marginLeft: 28,
+    padding: 16,
+    // backgroundColor: 'red',
+    // marginLeft: '5%',
+    // marginLeft: 16,
     marginTop: 20,
-    width: 400,
+    width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
   },
   view4title: {
-    marginLeft: 40,
+    marginLeft: '3%',
     flexShrink: 1
   },
   button1: {
-    width: 260,
+    width: '100%',
     height: 57,
     backgroundColor: '#FE724C',
     justifyContent: 'center',

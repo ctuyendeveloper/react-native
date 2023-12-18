@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, View, Pressable } from 'react-native'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
-const Screen2 = () => {
+const Screen2 = ({navigation}) => {
   const [giatri, getgiatri] = useState(1);
   const total = 100 * giatri;
   const changegiatricong = () => {
@@ -16,6 +16,9 @@ const Screen2 = () => {
   return (
     <View style={styles.body}>
       <Image style={styles.icon1} source={require('../../../media_phainop/iconlab8a1.png')} />
+      <Pressable onPress={() => navigation.navigate('full')} style={styles.homeview2ab}>
+        <Image style={styles.iconsearchhomeview2ab} source={require('../../../media_phainop/back.png')} />
+      </Pressable>
       <View style={styles.body2}>
         <View style={styles.homeview2}>
           <Text style={styles.homeview3atitle1}>Fried Rice</Text>
@@ -121,13 +124,26 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     position: 'absolute',
-    top: 250,
+    top: 150,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },
   icon1: {
     width: '100%',
   },
+  homeview2ab: {
+    left: '5%',
+    top: '5%',
+    position: 'absolute',
+    backgroundColor: 'white',
+    borderRadius: 13.3,
+    width: '12%',
+    height: 49,
+},
+iconsearchhomeview2ab: {
+  marginTop: 16,
+  marginLeft: 10,
+},
   homeview2: {
     borderWidth: 0.1,
     top: -22,
